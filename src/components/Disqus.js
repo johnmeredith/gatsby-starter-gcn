@@ -24,7 +24,7 @@ class Disqus extends Component {
     const url = siteUrl + postNode.fields.slug;
     return (
       <ReactDisqusComments
-        shortname={shortName}
+        shortname={health-archetextures}
         identifier={post.title}
         title={post.title}
         url={url}

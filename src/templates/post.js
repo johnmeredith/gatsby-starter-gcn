@@ -10,6 +10,7 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDate from '../components/PostDate'
 import SEO from '../components/SEO'
+import Disqus from '../components/Disqus';
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -21,9 +22,15 @@ const PostTemplate = ({ data, pageContext }) => {
     tags,
   } = data.contentfulPost
   const postNode = data.contentfulPost
-
   const previous = pageContext.prev
   const next = pageContext.next
+  const { subtitle, author, disqusShortname, url } = this.props.siteMetadata;
+
+  const commentsBlock = (
+    <div>
+      <Disqus postNode={post} shortName={disqusShortname} url={url} />
+    </div>
+  );
 
   return (
     <Layout>
@@ -77,6 +84,7 @@ export const query = graphql`
           html
           excerpt(pruneLength: 320)
         }
+      {disqusShortname && commentsBlock}
       }
     }
   }

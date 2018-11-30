@@ -10,7 +10,7 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDate from '../components/PostDate'
 import SEO from '../components/SEO'
-import DisqusPost from '../components/Disqus';
+import Disqus from 'disqus-react'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -25,6 +25,16 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const previous = pageContext.prev
   const next = pageContext.next
+
+  class BlogPostTemplate extends Component {
+    render() {
+      const post = this.props.data.markdownRemark
+      const disqusConfig = {
+        url: `https://www.archetextur.es/${this.props.location.pathname}`,
+        identifier: `${this.props.location.pathname}`,
+        title: post.frontmatter.title,
+      }
+
 
   return (
     <Layout>
@@ -41,9 +51,11 @@ const PostTemplate = ({ data, pageContext }) => {
         <PageBody body={body} />
       </Container>
       <PostLinks previous={previous} next={next} />
-      <DisqusPost shortname={disqusShortname} config={disqusConfig} />
+      <Disqus.DiscussionEmbed shortname="health-archetextures" config={disqusConfig} />
     </Layout>
   )
+}
+}
 }
 
 export const query = graphql`

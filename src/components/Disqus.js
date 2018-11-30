@@ -1,6 +1,6 @@
 import Disqus from 'disqus-react'
 
-class DisqusPost extends Component {
+class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.markdownRemark
     const disqusConfig = {
@@ -8,14 +8,6 @@ class DisqusPost extends Component {
       identifier: `${this.props.location.pathname}`,
       title: post.frontmatter.title,
     }
-
-    // Below is the version that blew the comment section up...
-
-    // const disqusConfig = {
-    //   url: `https://www.xiaoru.li${this.props.location}`,
-    //   identifier: this.props.location,
-    //   title: post.frontmatter.title,
-    // }
 
     return (
       <Layout>

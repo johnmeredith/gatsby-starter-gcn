@@ -84,7 +84,7 @@ export const query = graphql`
           html
           excerpt(pruneLength: 320)
         }
-      
+      {disqusShortname && commentsBlock}
       }
     }
   }

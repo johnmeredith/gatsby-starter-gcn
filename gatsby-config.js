@@ -29,6 +29,7 @@ module.exports = {
       author: config.author,
       copyright: config.copyright,
     },
+    disqusShortname: 'health-archetextures',
   },
   plugins: [
     {

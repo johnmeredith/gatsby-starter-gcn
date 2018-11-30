@@ -62,9 +62,13 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
 <<<<<<< HEAD
     padding-left: 1em;
+<<<<<<< HEAD
     text-indent: -1.5em;
 =======
 >>>>>>> parent of 9822b5f... Update global.js
+=======
+    text-indent: -1em;
+>>>>>>> parent of 4483b24... Update global.js
   }
 
   blockquote, q {

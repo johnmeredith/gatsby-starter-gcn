@@ -60,6 +60,8 @@ const GlobalStyle = createGlobalStyle`
 
   ol, ul, li {
     list-style: none;
+    padding-left: 1em;
+    text-indent: -1em;
   }
 
   blockquote, q {

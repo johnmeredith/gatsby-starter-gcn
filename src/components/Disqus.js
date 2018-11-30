@@ -1,6 +1,6 @@
 import Disqus from 'disqus-react'
 
-class BlogPostTemplate extends Component {
+class DisqusPost extends Component {
   render() {
     const post = this.props.data.markdownRemark
     const disqusConfig = {

@@ -1,6 +1,6 @@
 import Disqus from 'disqus-react'
 
-class BlogPostTemplate extends Component {
+class Disqus extends Component {
   render() {
     const post = this.props.data.markdownRemark
     const disqusConfig = {
@@ -11,10 +11,12 @@ class BlogPostTemplate extends Component {
 
     return (
       <Layout>
-        {/* blah blah blah */}
-        <Disqus.DiscussionEmbed shortname="health-archetextures" config={disqusConfig} />
-        {/* blah blah blah */}
+        <Disqus.DiscussionEmbed 
+        shortname="health-archetextures" 
+        config={disqusConfig} />
       </Layout>
     )
   }
 }
+
+export default Disqus;

@@ -10,6 +10,7 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDate from '../components/PostDate'
 import SEO from '../components/SEO'
+import Disqus from '../components/Disqus'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -42,6 +43,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <PageBody body={body} />
       </Container>
       <PostLinks previous={previous} next={next} />
+      <Disqus.DiscussionEmbed shortname="health-archetextures" config={disqusConfig} />
     </Layout>
   )
 }

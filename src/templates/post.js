@@ -8,7 +8,7 @@ import Container from '../components/Container'
 import PageBody from '../components/PageBody'
 import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
-import PostDate from '../components/PostDate'
+import PostDetails from '../components/PostDetails'
 import SEO from '../components/SEO'
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -38,7 +38,10 @@ const PostTemplate = ({ data, pageContext }) => {
 
       <Container>
         {tags && <TagList tags={tags} />}
-        <PostDate date={publishDate} />
+        <PostDetails
+          date={publishDate}
+          timeToRead={body.childMarkdownRemark.timeToRead}
+        />
         <PageBody body={body} />
       </Container>
       <PostLinks previous={previous} next={next} />
@@ -76,6 +79,7 @@ export const query = graphql`
       }
       body {
         childMarkdownRemark {
+          timeToRead
           html
           excerpt(pruneLength: 320)
         }

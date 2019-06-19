@@ -56,7 +56,7 @@ export const query = graphql`
           title
           id
           slug
-          publishDate(formatString: "MMMM DD, YYYY")
+          publishDate(formatString: "DD MMMM, YYYY")
           heroImage {
             title
             fluid(maxWidth: 1800) {
@@ -67,7 +67,7 @@ export const query = graphql`
             childMarkdownRemark {
               timeToRead
               html
-              excerpt(pruneLength: 80)
+              excerpt(pruneLength: 250)
             }
           }
         }

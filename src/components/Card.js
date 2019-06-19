@@ -45,6 +45,11 @@ const Title = styled.h2`
 `
 
 const Date = styled.h3`
+  margin: 0 1rem 0.5rem 1rem;
+  color: gray;
+`
+
+const ReadingTime = styled.h4`
   margin: 0 1rem 1.5rem 1rem;
   color: gray;
 `
@@ -54,13 +59,24 @@ const Excerpt = styled.p`
   line-height: 1.6;
 `
 
-const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
+const Card = ({
+  slug,
+  heroImage,
+  title,
+  publishDate,
+  body,
+  body: {
+    childMarkdownRemark: { timeToRead },
+  },
+  ...props
+}) => {
   return (
     <Post featured={props.featured}>
       <Link to={`/${slug}/`}>
         <Img fluid={heroImage.fluid} backgroundColor={'#eeeeee'} />
         <Title>{title}</Title>
         <Date>{publishDate}</Date>
+        <ReadingTime>{timeToRead} min read</ReadingTime>
         <Excerpt
           dangerouslySetInnerHTML={{
             __html: body.childMarkdownRemark.excerpt,

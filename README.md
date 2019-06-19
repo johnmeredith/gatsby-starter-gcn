@@ -2,8 +2,6 @@
 
 A starter template to build amazing static websites with Gatsby, Contentful and Netlify. Inspired by [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter).
 
-For Gatsby `v1` please use the [v1 branch](https://github.com/ryanwiemer/gatsby-starter-gcn/tree/v1)
-
 ## Features
 
 - Contentful integration with ready to go placeholder content
@@ -81,7 +79,7 @@ module.exports = {
 }
 ```
 
-**Note:** If you do not see your changes reflected when developing locally you may need to delete the `.cache` folder and restart the development server.
+**Note:** If you do not see your changes reflected when developing locally you may need to run `npm run clean` and restart the development server.
 
 ### Theme
 
@@ -132,7 +130,7 @@ const theme = {
 
 2.  Connect with GitHub and select your repo
 
-3.  Navigate to Netlify: **Settings** → **Build & Deploy** → **Build Environment Variables**. Add the following environment variables using the Space ID and Production Access Token from Contentful. Additionally if desired you can enter a Google Analytics ID. The variables must be named exactly like this in order to work properly.
+3.  Navigate to Netlify: **Settings** → **Build & Deploy** → **Build Environment Variables**. Add the following environment variables using the Space ID and Content Delivery API - access token from Contentful. Additionally if desired you can enter a Google Analytics ID. The variables must be named exactly like this in order to work properly.
 
 ```
 ACCESS_TOKEN

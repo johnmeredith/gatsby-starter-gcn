@@ -93,7 +93,12 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-family: "Georgia",Times,"Times New Roman",Serif;
-    font-size: 120%;
+    font-size: 110%;
+}
+
+  footnote-ref {
+    vertical-align: super;
+    font-size: smaller;
 }
 
   body {

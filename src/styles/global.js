@@ -91,19 +91,20 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  h1, h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  p {
+    font-family: "Georgia",Times,"Times New Roman",Serif;
+    font-size: 120%;
 }
 
   body {
     background: white;
     line-height: 1;
-    font-size: 120%;
+    font-size: 100%;
     font-variant-ligatures: none;
     text-rendering: optimizeLegibility;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     font-weight: 400;
-    font-family: Times,"Times New Roman",Serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
   img {

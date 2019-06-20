@@ -92,8 +92,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-family: "Georgia",Times,"Times New Roman",Serif;
-    font-size: 110%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0d.woff) format('woff');
 }
 
 

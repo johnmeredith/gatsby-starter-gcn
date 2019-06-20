@@ -96,10 +96,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 110%;
 }
 
-  a.footnote-ref {
-    vertical-align: super;
-    font-size: smaller;
-}
 
   body {
     background: white;

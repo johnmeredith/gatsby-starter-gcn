@@ -94,6 +94,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-family: 'Merriweather';
     font-style: normal;
+    font-size: 110%;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-fCZK.woff) format('woff');
 }

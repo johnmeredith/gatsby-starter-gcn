@@ -92,10 +92,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-family: 'Open Sans';
+    font-family: 'Merriweather';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0d.woff) format('woff');
+    src: url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-fCZK.woff) format('woff');
 }
 
 
@@ -107,7 +107,8 @@ const GlobalStyle = createGlobalStyle`
     text-rendering: optimizeLegibility;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Montserrat';
+    src: url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WlhzQ.woff) format('woff');
 }
 
   img {

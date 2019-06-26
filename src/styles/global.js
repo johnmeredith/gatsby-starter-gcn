@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  p {
+  p, li {
     font-family: "Georgia",Times,"Times New Roman",Serif;
     font-style: normal;
     font-size: 100%;

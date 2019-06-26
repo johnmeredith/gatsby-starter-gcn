@@ -98,7 +98,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
 }
 
-footnote-ref {
+sup {
     vertical-align: super;
     font-size: smaller;
 }

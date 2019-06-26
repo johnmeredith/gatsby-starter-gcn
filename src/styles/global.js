@@ -91,13 +91,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  p, li {
+  p {
     font-family: "Georgia",Times,"Times New Roman",Serif;
     font-style: normal;
     font-size: 100%;
     font-weight: 400;
 }
 
+footnote-ref {
+    vertical-align: super;
+    font-size: smaller;
+}
 
   body {
     background: white;

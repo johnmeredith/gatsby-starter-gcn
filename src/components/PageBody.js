@@ -26,7 +26,7 @@ const Body = styled.div`
   }
 
   p {
-    font-family: "Georgia",Times,"Times New Roman",Serif;
+    font-family: Merriweather,"Georgia",Times,"Times New Roman",Serif;
     line-height: 1.6;
     margin: 0 0 2em 0;
   }
@@ -56,6 +56,7 @@ const Body = styled.div`
 
   ul {
     li {
+      font-family: Merriweather,"Georgia",Times,"Times New Roman",Serif;
       list-style: disc;
       list-style-position: outside;
       line-height: 1.25;
